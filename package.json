@@ -1,0 +1,22 @@
+{
+  "name": "native_deps",
+  "version": "1.0.0",
+  "description": "dummy test app",
+  "main": "main.js",
+  "author": "me",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@tauubyebye/win-audio": "2.0.4"
+  },
+  "devDependencies": {
+    "electron": "^25.4.0",
+    "electron-builder": "^24.6.3"
+  },
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "release": "electron-builder -w",
+    "release2": "electron-builder --config electron-builder.conf.json -w"
+  }
+}

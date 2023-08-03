@@ -1,0 +1,26 @@
+{
+  "artifactName": "${productName}-${version}.${ext}",
+  "electronVersion": "25.4.0",
+  "files": [{
+    "filter": [
+      "main.js",
+      "index.html",
+      "preload.js"
+    ]
+  }],
+  "directories": {
+    "output": "dist"
+  },
+  "appId": "de.lifbi.prototypes.native_deps",
+  "extraResources": ["lib/*"],
+  "productName": "native-deps",
+  "win": {
+    "compression": "normal",
+    "target": "zip"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "runAfterFinish": false
+  }
+}
